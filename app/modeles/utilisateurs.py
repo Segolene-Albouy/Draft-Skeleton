@@ -3,7 +3,7 @@ from flask_login import UserMixin
 
 from .. app import db, login
 
-
+# on crée un modèle pour les utilosateurs de notre BDD
 class User(UserMixin, db.Model):
     # user_id = db.Column(db.Integer, unique=True, nullable=False, primary_key=True, autoincrement=True)
     # user_nom = db.Column(db.Text, nullable=False)

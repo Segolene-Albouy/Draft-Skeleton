@@ -3,7 +3,9 @@ import datetime
 
 from .. app import db
 
+# Convention : les classes portent un nom commençant par une majuscule
 
+# on crée notre modèle pour l'assignation d'un auteur
 class Authorship(db.Model):
     # __tablename__ = "authorship"
     # authorship_id = db.Column(db.Integer, nullable=True, autoincrement=True, primary_key=True)
@@ -20,15 +22,15 @@ class Authorship(db.Model):
     #     }
 
 
-# On crée notre modèle
+# On crée notre modèle de document
 class Document(db.Model):
-    # place_id = db.Column(db.Integer, unique=True, nullable=False, primary_key=True, autoincrement=True)
-    # place_nom = db.Column(db.Text)
-    # place_description = db.Column(db.Text)
-    # place_longitude = db.Column(db.Float)
-    # place_latitude = db.Column(db.Float)
-    # place_type = db.Column(db.String(45))
-    # authorships = db.relationship("Authorship", back_populates="place")
+    # document_id = db.Column(db.Integer, unique=True, nullable=False, primary_key=True, autoincrement=True)
+    # document_nom = db.Column(db.Text)
+    # document_description = db.Column(db.Text)
+    # document_longitude = db.Column(db.Float)
+    # document_latitude = db.Column(db.Float)
+    # document_type = db.Column(db.String(45))
+    # authorships = db.relationship("Authorship", back_populates="document")
 
     # def to_jsonapi_dict(self):
     #     """ It ressembles a little JSON API format but it is not completely compatible
@@ -36,18 +38,18 @@ class Document(db.Model):
     #     :return:
     #     """
     #     return {
-    #         "type": "place",
-    #         "id": self.place_id,
+    #         "type": "document",
+    #         "id": self.document_id,
     #         "attributes": {
-    #             "name": self.place_nom,
-    #             "description": self.place_description,
-    #             "longitude": self.place_longitude,
-    #             "latitude": self.place_latitude,
-    #             "category": self.place_type
+    #             "name": self.document_nom,
+    #             "description": self.document_description,
+    #             "longitude": self.document_longitude,
+    #             "latitude": self.document_latitude,
+    #             "category": self.document_type
     #         },
     #         "links": {
-    #             "self": url_for("lieu", place_id=self.place_id, _external=True),
-    #             "json": url_for("api_places_single", place_id=self.place_id, _external=True)
+    #             "self": url_for("lieu", document_id=self.document_id, _external=True),
+    #             "json": url_for("api_documents_single", document_id=self.document_id, _external=True)
     #         },
     #         "relationships": {
     #              "editions": [
