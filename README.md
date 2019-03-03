@@ -22,7 +22,7 @@ app/				fichiers définissant l'application
 –– routes/					fichiers définissant les routes d'accès aux pages de l'application
 –––––– __init__.py				fichier initialisant le dossier en module
 –––––– api.py					définition des url de l'API et du contenu JSON de réponse
-–––––– routes.py				définition des url et du contenu des pages associées
+–––––– routes.py				définition des url et des fonctions définissant le contenu des pages associées
 –––––– __pycache__/				fichiers cache python
 –– static/					fichiers statiques
 –––––– css/						fichiers css (bootstrap, font-awesome)
