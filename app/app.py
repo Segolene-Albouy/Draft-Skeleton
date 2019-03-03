@@ -12,7 +12,7 @@ statics = os.path.join(chemin_actuel, "static")
 # on stocke le chemin vers les statics
 
 db = SQLAlchemy()
-# on initie l'extension
+# on initie l'objet SQLAlchemy
 
 login = LoginManager()
 # on met en place la gestion d'utilisateur-rice-s
@@ -22,16 +22,22 @@ app = Flask(
     template_folder=templates,
     static_folder=statics
 )
-# on initie l'app
+# on initie l'app où le nom __name__ sera précisé dans la configuration (config_app())
+# et on définit les dossiers contenants les templates et les statics
 
 
-from .routes import generic
+from .routes import routes
 from .routes import api
 
 
 def config_app(config_name="test"):
     """ Create the application """
     app.config.from_object(CONFIG[config_name])
+    # on configure l'app en appelant la constante CONFIG
+    # qui définit s'il s'agit de l'app test ou app de production
+    # la variable config_name a pour valeur de base "test"
+    # les configurations sont contenues dans le fichier constantes.py
+    # où les BDD associées sont définies
 
     # Set up extensions
     db.init_app(app)
