@@ -9,9 +9,9 @@ __init__.py			fichier initialisant le dossier en package
 db.sqlite			base de données utilisée par l'application
 run.py				appel de l'application pour son lancement
 
-app/				fichiers définissant l'application
+app/				Package application
 –– __init__.py			fichier initialisant le dossier en package
-–– app.py				création et configuration de l'application
+–– app.py			module principal de l'application (initialisation et configuration)
 –– constantes.py		défintion des constantes utilisées dans l'application
 –– test_db.sqlite		base de données utilisée par la version test de l'application
 –– __pycache__/			fichiers cache python (pré-compilation pour exécution plus rapide des fichiers .py)
