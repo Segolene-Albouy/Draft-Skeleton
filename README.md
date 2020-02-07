@@ -17,8 +17,8 @@ app/				Package application
 –– __pycache__/			fichiers cache python (pré-compilation pour exécution plus rapide des fichiers .py)
 –– modeles/					fichiers de modélisation de la base de donnée
 –––––– __init__.py				fichier initialisant le dossier en package
-–––––– donnees.py				mise en place des classe de la BDD
-–––––– utilisateurs.py			classe User + fonctionnalités de création et identification
+–––––– donnees.py				mise en place des classes de la BDD
+–––––– utilisateurs.py				classe User + fonctionnalités de création et identification
 –––––– __pycache__/				fichiers cache python
 –– routes/					fichiers définissant les routes d'accès aux pages de l'application
 –––––– __init__.py				fichier initialisant le dossier en package
@@ -26,8 +26,8 @@ app/				Package application
 –––––– routes.py				définition des url et des fonctions définissant le contenu des pages associées
 –––––– __pycache__/				fichiers cache python
 –– static/					fichiers statiques
-–––––– css/						fichiers css (bootstrap, font-awesome)
-–––––– fonts/					fichiers de police de caractères
+–––––– css/						fichiers css (bootstrap, font-awesome, etc.)
+–––––– fonts/						fichiers de police de caractères
 –––––– img/						fichiers images
 –––––– js/						fichiers javascript (bootstrap, jquery, popper)
 –– templates/				templates constituant les différentes pages de l'application
