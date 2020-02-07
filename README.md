@@ -31,7 +31,7 @@ app/				Package application
 –––––– img/						fichiers images
 –––––– js/						fichiers javascript (bootstrap, jquery, popper)
 –– templates/				templates constituant les différentes pages de l'application
-–––––– conteneur.html			page de base à compléter
+–––––– conteneur.html				page de base à compléter
 –––––– pages/					pages du site (accueil, connexion, recherche, etc.)
 –––––– partials/				blocs à intégrer aux pages du site
 ––––––––––– css.html				balise lien vers les fichiers bootstrap
