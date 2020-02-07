@@ -26,10 +26,10 @@ app/				Package application
 –––––– routes.py				définition des url et des fonctions définissant le contenu des pages associées
 –––––– __pycache__/				fichiers cache python
 –– static/				fichiers statiques
-–––––– css/						fichiers css (bootstrap, font-awesome, etc.)
-–––––– fonts/						fichiers de police de caractères
-–––––– img/						fichiers images
-–––––– js/						fichiers javascript (bootstrap, jquery, popper)
+–––––– css/					fichiers css (bootstrap, font-awesome, etc.)
+–––––– fonts/					fichiers de police de caractères
+–––––– img/					fichiers images
+–––––– js/					fichiers javascript (bootstrap, jquery, popper)
 –– templates/				templates constituant les différentes pages de l'application
 –––––– conteneur.html				page de base à compléter
 –––––– pages/					pages du site (accueil, connexion, recherche, etc.)
@@ -39,9 +39,9 @@ app/				Package application
 ––––––––––– recherche.html			module de recherche réduit
 
 tests/				tests relatifs à la vérification du fonctionnement de l'application	
-–– __init__.py			fichier initialisant le dossier en package
+–– __init__.py				fichier initialisant le dossier en package
 –– base.py				duplication de la BDD et configuration de l'app à utiliser pour les tests
-–– test_1.py			définition d'un premier test
+–– test_1.py				définition d'un premier test
 
 venv/				fichiers relatifs à l'environnement virtuel
 					à activer avec "source venv/bin/activate"
